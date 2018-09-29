@@ -19,7 +19,8 @@ namespace Vidly.Controllers
         public ActionResult Random()
         {
             Movie movie = new Movie() { Name = "Pay it forward" };
-            return View(movie);
+            //return View(movie);
+            return RedirectToAction("Index", "Home", new { id = 1 });
         }
     }
 }
